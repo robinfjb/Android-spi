@@ -1,0 +1,84 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.robin.spi",
+    "module": "plugin",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.5",
+      "buildId": "huefputegfgjfl5rhlpopayo54"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "plugin-1.0.0.jar",
+          "url": "plugin-1.0.0.jar",
+          "size": 9455,
+          "sha512": "95b6123636ff57787136b6ca8699e49fbaaed3b072906f1c80cb651ee1588abebdcda91ac76ea520a6cb909651d555e4fae0b1ddf99120a86ee8b8c82e99235c",
+          "sha256": "2a0de97a8a66172d7951ca7d31cecb69af5cd703a2cd12b1d6eee96d35b12cc2",
+          "sha1": "5ebbefd6e273473ee4086551cc27d670db4c1a9c",
+          "md5": "4df7d0894192e461a6d77213c08bcd9f"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.tools.build",
+          "module": "gradle",
+          "version": {
+            "requires": "4.1.2"
+          }
+        },
+        {
+          "group": "com.kronos.plugin",
+          "module": "BasePlugin",
+          "version": {
+            "requires": "0.2.1"
+          }
+        },
+        {
+          "group": "SpiLoader",
+          "module": "annotation",
+          "version": {
+            "requires": "unspecified"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "plugin-1.0.0.jar",
+          "url": "plugin-1.0.0.jar",
+          "size": 9455,
+          "sha512": "95b6123636ff57787136b6ca8699e49fbaaed3b072906f1c80cb651ee1588abebdcda91ac76ea520a6cb909651d555e4fae0b1ddf99120a86ee8b8c82e99235c",
+          "sha256": "2a0de97a8a66172d7951ca7d31cecb69af5cd703a2cd12b1d6eee96d35b12cc2",
+          "sha1": "5ebbefd6e273473ee4086551cc27d670db4c1a9c",
+          "md5": "4df7d0894192e461a6d77213c08bcd9f"
+        }
+      ]
+    }
+  ]
+}

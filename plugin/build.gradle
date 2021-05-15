@@ -1,0 +1,37 @@
+// 引用插件
+plugins {
+    // 用来生成plugin的插件，gradlePlugin 方法
+    id "java-gradle-plugin"
+    // 用来发布plugin的插件，publishing 方法
+    id 'maven-publish'
+    id "groovy"
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation gradleApi()
+    implementation localGroovy()
+    implementation "com.android.tools.build:gradle:4.1.2"
+    implementation 'com.kronos.plugin:BasePlugin:0.2.1'
+    implementation project(':annotation')
+}
+
+//group和version在后面使用自定义插件的时候会用到
+group='com.robin.spi'
+version='1.0.0'
+gradlePlugin {
+    plugins {
+        hello {
+            id = 'com.robin.spi.plugin'
+            implementationClass = 'com.robin.spi.plugin.SpiLoaderPlugin'
+        }
+    }
+}
+publishing {
+    repositories {
+        maven {
+            url '../maven-repo'
+        }
+    }
+}

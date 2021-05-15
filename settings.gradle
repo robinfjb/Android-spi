@@ -1,0 +1,6 @@
+include ':plugin'
+include ':core'
+include ':apt'
+include ':annotation'
+include ':demoapp'
+rootProject.name = "SpiLoader"
